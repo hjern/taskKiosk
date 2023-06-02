@@ -43,7 +43,7 @@ public class Main {
                 System.out.println();
 
                 System.out.println("메뉴 선택");
-                int count = 0;
+//                int count = 0;
                 int choice = sc.nextInt();
                 sc.nextLine();
 
