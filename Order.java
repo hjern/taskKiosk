@@ -36,13 +36,13 @@ public class Order {
 
     }
 
-//    public void printOrderWaitingNumber() {
-//        for (int i = 0; i < orderItems.size(); i++) {
-//            MainMenu item = orderItems.get(i);
-//            int waitingNumber = i + 1;
-//            System.out.println("손님 " + waitingNumber + "명이 대기중입니다.");
-//        }
-//    }
+    public void printOrderWaitingNumber() {
+        for (int i = 0; i < orderItems.size(); i++) {
+            MainMenu item = orderItems.get(i);
+            int waitingNumber = i + 1;
+            System.out.println("손님 " + waitingNumber + "명이 대기중입니다.");
+        }
+    }
 
 
     public static void stop3Second() { // 3초 지연 후 실행 메서드
