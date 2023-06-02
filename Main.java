@@ -16,6 +16,7 @@ public class Main {
                 Scanner sc = new Scanner(System.in);
                 Order order = new Order();
 
+
                 // Create dessert menu: ArrayList<MainMenu> dessertMenu = new ArrayList<>();
                 ArrayList<MainMenu> dessertMenu = createDessertMenu();
                 // Create cocktail menu: ArrayList<MainMenu> cocktailMenu = new ArrayList<>();
@@ -42,6 +43,7 @@ public class Main {
                 System.out.println();
 
                 System.out.println("메뉴 선택");
+                int count = 0;
                 int choice = sc.nextInt();
                 sc.nextLine();
 
@@ -88,7 +90,7 @@ public class Main {
 //                          - 장바구니는 초기화되고 3초 후에 메인 메뉴판으로 돌아갑니다. // 완료
 
                                 System.out.println("주문이 완료되었습니다.");
-                                System.out.println("고객님의 대기 순번은 [ 1번 ]입니다.");
+                                System.out.println("대기번호는 ["+ ++count +"]번 입니다.");
                                 System.out.println("3초 후 메뉴판으로 이동합니다. 감사합니다.");
                                 order.clearOrder();
                                 Order.stop3Second(); // 3초 후에 돌아가는 인터페이스
